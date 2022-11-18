@@ -45,6 +45,16 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 <h3>Monday, November 28, 2022 at 1pm UTC</h3>
 
+<h4>Leah South<br>Improving Estimates of Posterior Expectations with Stein-Based Control Variates and the ZVCV Package</h4>
+
+<p>
+This talk is about improving estimates of posterior expectations using the derivatives of the log posterior or unbiased estimates of this quantity. I will first give an overview of existing methods in the field, as per [1], before introducing the semi-exact control functionals (SECF) method [2]. SECF is based on control functionals and Sard’s approach to numerical integration. The use of Sard’s approach ensures that our control functionals are exact on all polynomials up to a fixed degree in the Bernstein-von-Mises limit. SECF is also bias-correcting, in the sense that it is capable of removing asymptotic bias in biased MCMC samplers under some conditions. I will use several Bayesian inference examples to illustrate the potential for reduction in mean square error. I will also demonstrate how to implement SECF and other variance reduction methods in my ZVCV package on CRAN. <br><br>
+ 
+[1] South, L. F, Riabiz, M., Teymur, O. and Oates, C. J. (2022). Postprocessing of MCMC. Annual Review of Statistics and Its Application, 9, 529-555. <br>
+ 
+[2] South, L. F., Karvonen, T., Nemeth, C., Girolami, M., & Oates, C. (2022). Semi-Exact Control Functionals From Sard's Method. Biometrika, 109(2), 351-367. 
+</p>
+
 
 <h4>Jeremy Heng<br>Statistical inference for individual-based models of disease transmission</h4>
 
@@ -59,16 +69,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 Stochastic processes provide a mathematically elegant way to model complex data. In theory, they provide flexible priors over function classes that can encode a wide range of interesting assumptions. However, in practice efficient inference by optimisation or marginalisation is difficult, a problem further exacerbated with big data and high dimensional input spaces. We propose a novel variational autoencoder (VAE) called the prior encoding variational autoencoder (𝜋VAE). 𝜋VAE is a new continuous stochastic process. We use 𝜋VAE to learn low dimensional embeddings of function classes by combining a trainable feature mapping with generative model using a VAE. We show that our framework can accurately learn expressive function classes such as Gaussian processes, but also properties of functions such as their integrals. For popular tasks, such as spatial interpolation, 𝜋VAE achieves state-of-the-art performance both in terms of accuracy and computational efficiency. Perhaps most usefully, we demonstrate an elegant and scalable means of performing fully Bayesian inference for stochastic processes within probabilistic programming languages such as Stan. 
 </p>
 
-
-<h4>Leah South<br>Improving Estimates of Posterior Expectations with Stein-Based Control Variates and the ZVCV Package</h4>
-
-<p>
-This talk is about improving estimates of posterior expectations using the derivatives of the log posterior or unbiased estimates of this quantity. I will first give an overview of existing methods in the field, as per [1], before introducing the semi-exact control functionals (SECF) method [2]. SECF is based on control functionals and Sard’s approach to numerical integration. The use of Sard’s approach ensures that our control functionals are exact on all polynomials up to a fixed degree in the Bernstein-von-Mises limit. SECF is also bias-correcting, in the sense that it is capable of removing asymptotic bias in biased MCMC samplers under some conditions. I will use several Bayesian inference examples to illustrate the potential for reduction in mean square error. I will also demonstrate how to implement SECF and other variance reduction methods in my ZVCV package on CRAN. <br><br>
- 
-[1] South, L. F, Riabiz, M., Teymur, O. and Oates, C. J. (2022). Postprocessing of MCMC. Annual Review of Statistics and Its Application, 9, 529-555. <br>
- 
-[2] South, L. F., Karvonen, T., Nemeth, C., Girolami, M., & Oates, C. (2022). Semi-Exact Control Functionals From Sard's Method. Biometrika, 109(2), 351-367. 
-</p>
 
 
 <h3>Tuesday, November 29, 2022 at 1pm UTC</h3>
