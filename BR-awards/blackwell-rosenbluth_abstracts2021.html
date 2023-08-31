@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+Editorial by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+
+<html>
+<head>
+<title>Blackwell-Rosenbluth Award</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Main -->
+<div id="main">
+<div class="inner">
+
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>j-ISBA</strong></a>
+<ul class="icons">
+<li><a href="https://www.facebook.com/groups/843187915745360/?ref=br_rs" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+<li><a href="https://twitter.com/j_isba" class="icon fa-twitter"><span class="label">Medium</span></a></li>
+</ul>
+</header>
+
+<!-- Section -->
+<section>
+<section>
+
+<!--### BODY ######################################################################-->
+<!-- Content -->
+<h2 id="content">Abstracts for the JB^3 webinars with the winners of the Blackwell-Rosenbluth Award</h2>
+
+
+<h3>Wednesday, November 10, 2021 at 1pm UTC</h3>
+
+<h4>Trevor Campbell<br>Parallel Tempering on Optimized Paths</h4>
+
+<p>
+Parallel tempering (PT) is a class of Markov chain Monte Carlo algorithms that constructs a path of distributions annealing between a tractable reference and an intractable target, and then interchanges states along the path to improve mixing in the target. The performance of PT depends on how quickly a sample from the reference distribution makes its way to the target, which in turn depends on the particular path of annealing distributions. However, past work on PT has used only simple paths constructed from convex combinations of the reference and target log-densities. In this talk I'll show that this path performs poorly in the common setting where the reference and target are nearly mutually singular. To address this issue, I'll present an extension of the PT framework to general families of paths, formulate the choice of path as an optimization problem that admits tractable gradient estimates, and present a flexible new family of spline interpolation paths for use in practice. Theoretical and empirical results will demonstrate that the proposed methodology breaks previously-established upper performance limits for traditional paths.
+</p>
+
+
+<h4>Daniel Kowal<br>Bayesian subset selection and variable importance for interpretable prediction and classification</h4>
+
+<p>
+Subset selection is a valuable tool for interpretable learning, scientific discovery, and data compression. However, classical subset selection is often avoided due to selection instability, computational bottlenecks, and lack of post-selection inference. We address these challenges from a Bayesian perspective. Given any Bayesian predictive model M, we elicit predictively-competitive subsets using linear decision analysis. The approach is customizable for (local) prediction or classification and provides interpretable summaries of M. A key quantity is the acceptable family of subsets, which leverages the predictive distribution from M to identify subsets that offer near-optimal prediction. The acceptable family spawns new (co-) variable importance metrics based on whether variables (co-) appear in all, some, or no acceptable subsets. Crucially, the linear coefficients for any subset inherit regularization and predictive uncertainty quantification via M. The proposed approach exhibits excellent prediction, interval estimation, and variable selection for simulated data, including p = 400 > n. These tools are applied to a large education dataset with highly correlated covariates, where the acceptable family is especially useful. Our analysis provides unique insights into the combination of environmental, socioeconomic, and demographic factors that predict educational outcomes, and features highly competitive prediction with remarkable stability.
+</p>
+
+
+<h4>Yixin Wang<br>Theoretical Guarantees of Variational Bayes: Statistical and
+Computational Perspectives</h4>
+
+<p>
+A key challenge for modern Bayesian statistics is how to perform
+scalable inference of posterior distributions. To address this
+challenge, variational Bayes (VB) methods have emerged as a popular
+alternative to the classical Markov chain Monte Carlo (MCMC) methods
+in the machine learning community. Though popular, the theoretical
+properties of VB are less studied. In this talk, we discuss some
+theoretical results around VB, from both statistical and computational
+perspectives.
+<br>
+We begin with studying the asymptotics of mean-field VB, establishing
+frequentist consistency and asymptotic normality for VB in both
+well-specified and misspecified models. Despite the brutal
+approximation of the mean-field family, the variational Bayes
+posterior is consistent with the truth if the model is well-specified.
+When the model is misspecified, we find that the model
+misspecification error dominates the variational approximation error
+in VB posterior predictive distributions, suggesting that we pay a
+negligible price in using the variational approximation for
+prediction. This result also helps explain the widely observed
+phenomenon that VB achieves comparable predictive accuracy with MCMC
+despite its use of approximating families.
+<br>
+Beyond these statistical properties of VB, we also study the
+statistical and computational tradeoffs in VB methods. We focus on a
+case study of Bayesian linear regression using variational families
+with different degrees of flexibility. From a computational
+perspective, we find that less flexible variational families speed up
+computation. They reduce the variance in stochastic optimization and
+in turn, accelerate convergence.  From a statistical perspective,
+however, we find that less flexible families suffer in approximation
+quality, but provide better statistical generalization.
+<br>
+This is joint work with David Blei, Kush Bhatia, Nikki Kuang, and Yi-an Ma.
+</p>
+
+
+<h3>Friday, November 12, 2021 at 1pm UTC</h3>
+
+<h4>Marta Catalano<br>A Wasserstein index of dependence for Bayesian nonparametric modeling</h4>
+
+<p>
+Optimal transport (OT) methods and Wasserstein distances are flourishing in many scientific fields as an effective means for comparing and connecting different random structures. In this talk we describe the first use of an OT distance between Lévy measures with infinite mass to solve a statistical problem. Complex phenomena often yield data from different but related sources, which are ideally suited to Bayesian modeling because of its inherent borrowing of information. In a nonparametric setting, this is regulated by the dependence between random measures: we derive a general Wasserstein index for a principled quantification of the dependence gaining insight into the models’ deep structure. It also allows for an informed prior elicitation and provides a fair ground for model comparison. Our analysis unravels many key properties of the OT distance between Lévy measures, whose interest goes beyond Bayesian statistics, spanning to the theory of partial differential equations and of Lévy processes.
+</p>
+
+
+<h4>Samual Livingstone<br>Simplifying and optimising in Markov chain Monte Carlo</h4>
+
+<p>
+I will talk about two recent pieces of work on Markov chain Monte Carlo methods.  In the first we propose a straightforward alternative approach to proving invariance of an MCMC algorithm, which can greatly simplify proofs of correctness as well as the task of finding the right acceptance rate for a new algorithm. This is joint work with Christophe Andrieu and Anthony Lee.  In the second we consider optimal design of a family of gradient-based MCMC algorithms that includes the Metropolis-adjusted Langevin algorithm and the more recent Barker proposal as members. We consider how to make optimal choices within the class under various constraints, and the results suggest new and improved versions of some known algorithms.  This is joint work with Jure Vogrinc and Giacomo Zanella.
+</p>
+
+
+<h4>Dootika Vats<br>Lugsail lag windows for estimating time-average covariance matrices</h4>
+
+<p>
+Lag windows are commonly used in estimating the asymptotic covariance of ergodic averages in Markov chain Monte Carlo. In the presence of positive correlation of the underlying process, estimators of this matrix almost always exhibit significant negative bias, leading to an insufficient quality of output analysis. We propose a new family of lag windows specifically designed to improve finite-sample performance by offsetting this negative bias. Any existing lag window can be adapted into a lugsail equivalent with no additional assumptions.  We employ the lugsail lag windows in weighted batch means estimators due to their computational efficiency on large simulation output and arrive at some key theoretical results. Superior finite-sample properties and impact on output analysis are illustrated via an example.
+</p>
+
+
+</section>
+
+</div>
+
+</div>
+
+<!--### SIDE BAR #####################################################################-->
+<!-- Sidebar -->
+<div id="sidebar">
+<div class="inner">
+
+
+<!-- Menu -->
+<nav id="menu">
+<header class="major">
+<h2>Menu</h2>
+</header>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="events.html">Activities</a></li>
+<li><a href="bylaws.html">Bylaws</a></li>
+<li><a href="officers.html">Board</a></li>
+<li><a href="blackwell-rosenbluth.html">Blackwell-Rosenbluth Award</a></li>
+</ul>
+</nav>
+
+
+<!-- Section -->
+<section>
+<header class="major">
+<h2>Get in Touch</h2>
+</header>
+<ul class="contact">
+<li class="fa-envelope-o"><a href="mailto:jisba.section@gmail.com">jisba.section@gmail.com</a></li>
+<li class="fa-facebook"><a href="https://www.facebook.com/groups/843187915745360/?ref=br_rs"">Facebook Group</a></li>
+<li class="fa-github"><a href="https://github.com/j-ISBA">GitHub Page</a></li>
+</ul>
+</section>
+
+ <!-- Footer -->
+</div>
+</div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-90234804-1', 'auto');ga('send', 'pageview');</script>
+</body>
+</html>
